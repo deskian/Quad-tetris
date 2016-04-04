@@ -1,29 +1,26 @@
 {
-  "name": "quad-tetris",
+  "name": "mvp-project",
   "version": "0.0.1",
-  "description": "Quadruple tetris!",
+  "description": "One ugly app",
   "main": "index.js",
-  "repository": "git@github.com:deskian/Quad-tetris.git",
-  "license": "MIT",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "node index.js"
   },
-  "engine": "node 5.8",
-
-  "author": "Long Nguyen",
-  "license": "",
   "dependencies": {
-    "babel-preset-stage-1": "^6.1.18",
-    "lodash": "^3.10.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
-    "jquery": "^2.2.1",
-    "jsdom": "^8.1.0",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
-  }
+    "ejs": "2.3.3",
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "5.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }

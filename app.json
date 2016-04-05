@@ -1,6 +1,0 @@
-{
-  "name": "Quadruple Tetris",
-  "description": "Play 4 tetris game simutaniously",
-  "repository": "https://github.com/deskian/Quad-tetris.git",
-  "keywords": ["node", "express", "react"],
-}

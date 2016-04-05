@@ -36,7 +36,6 @@ Board.prototype.play = function(i, j) {
     return false;
   } else {
     this.board[i][j] = this.current_turn;
-    console.log(this.current_turn)
     this.check_winner(this.current_turn, i, j);
     if(this.max[this.current_turn-1]>=4){
       this.end_game(this.current_turn);
@@ -46,6 +45,7 @@ Board.prototype.play = function(i, j) {
   }
 }
 Board.prototype.check_winner = function(player, x, y) {
+  console.log(player)
   //check main diagonal
   var i = x;
   var j = y;
@@ -72,6 +72,7 @@ Board.prototype.check_winner = function(player, x, y) {
   var j = y;
   var k = x;
   var l = y;
+  counter = 0;
   while(this.board[i+1][j+1] === player || this.board[k-1][l-1] === player){
     if(this.board[i+1][j+1] === player){
       i++;
@@ -92,6 +93,7 @@ Board.prototype.check_winner = function(player, x, y) {
   var i = x;
   var j = y;
   var l = y;
+  counter = 0;
   while(this.board[i][j-1] === player || this.board[i][l+1] === player){
     if(this.board[i][j-1] === player){
       j--;
@@ -110,6 +112,7 @@ Board.prototype.check_winner = function(player, x, y) {
   var i = x;
   var j = y;
   var k = x;
+  counter = 0;
   while(this.board[i+1][j] === player || this.board[k-1][j] === player){
     if(this.board[i+1][j] === player){
       i++;

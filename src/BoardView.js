@@ -8,7 +8,8 @@ class BoardView extends React.Component {
     var intersections = [];
     for (var i = 0; i < props.board.size; i++)
         for (var j = 0; j < props.board.size; j++)
-            intersections.push(<BoardIntersection 
+            intersections.push(<BoardIntersection
+                                  key={i*100+j}
                                   board= {props.board}
                                   color= {props.board.board[i][j]}
                                   onPlay= {props.onPlay}
